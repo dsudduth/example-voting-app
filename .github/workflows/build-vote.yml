@@ -1,7 +1,7 @@
 env:
     SYSDIG_SECURE_ENDPOINT: 'https://us2.app.sysdig.com'
     REGISTRY_HOST: 'hub.docker.com'
-    IMAGE_NAME: 'worker'
+    IMAGE_NAME: 'vote'
     IMAGE_TAG: 'latest'
     DOCKERFILE_CONTEXT: 'vote/'
 name: Build Vote
