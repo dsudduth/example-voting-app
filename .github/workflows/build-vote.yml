@@ -3,8 +3,8 @@ env:
     REGISTRY_HOST: 'hub.docker.com'
     IMAGE_NAME: 'worker'
     IMAGE_TAG: 'latest'
-    DOCKERFILE_CONTEXT: 'worker/'
-name: Build Worker
+    DOCKERFILE_CONTEXT: 'vote/'
+name: Build Vote
 on: [push, pull_request]
 
 jobs:
@@ -42,7 +42,7 @@ jobs:
                 else
                     echo "sysdig-cli-scanner latest version already downloaded"
                 fi
-                
+
             - name: Scan the image using sysdig-cli-scanner
               env:
                 SECURE_API_TOKEN: ${{ secrets.SECURE_API_TOKEN }}
