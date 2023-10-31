@@ -20,7 +20,7 @@ jobs:
               uses: docker/build-push-action@v3
               with:
                 context: ${{ env.DOCKERFILE_CONTEXT }}
-                tags: /${{ secrets.REGISTRY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+                tags: ${{ secrets.REGISTRY_USER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
                 load: true
 
             - name: Setup cache
