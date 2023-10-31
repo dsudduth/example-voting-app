@@ -4,11 +4,11 @@ env:
     IMAGE_NAME: 'worker'
     IMAGE_TAG: 'latest'
     DOCKERFILE_CONTEXT: 'result/'
-name: Build Vote
+name: Build Result
 on: [push, pull_request]
 
 jobs:
-    build-worker:
+    build-result:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout

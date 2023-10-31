@@ -8,7 +8,7 @@ name: Build Vote
 on: [push, pull_request]
 
 jobs:
-    build-worker:
+    build-vote:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout
